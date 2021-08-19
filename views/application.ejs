@@ -1,0 +1,74 @@
+<%- include("./partials/header") %>
+
+    <!-- End Header -->
+    <!-- Mot Fondateur -->
+    <section class="content">
+        <h1>Formulaire de candidature:</h1>
+        <div class="content-row">
+            <!-- Side Nav--->
+            <%- include("./partials/administrationSideNav") %>
+                <!-- End Side Nav-->
+                <!-- Main Content-->
+                <div class="maincontent-col">
+                    <div class="contact-form" id="postuler" style="width: 80%;">
+                        <form action="">
+                            <div class="form-row">
+                                <div class="inputbox">
+                                    <input type="text" name="name" required>
+                                    <span>Nom</span>
+                                </div>
+                                <div class="inputbox">
+                                    <input type="text" name="firstname" required>
+                                    <span>Prénom</span>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="inputbox">
+                                    <input type="email" name="email" required>
+                                    <span>Adresse email</span>
+                                </div>
+                                <div class="inputbox">
+                                    <input type="text" name="telephone" required>
+                                    <span>Numéro de Téléphone</span>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="inputbox">
+                                    <input type="text" name="position" required>
+                                    <span>Poste Sollicité</span>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="selectfile">
+                                    <input type="file" name="cv" required>
+                                    <span>Votre CV</span>
+                                </div>
+                                <div class="selectfile">
+                                    <input type="file" name="telephone" required>
+                                    <span>Diplôme le plus élevé</span>
+                                </div>
+                            </div>
+                            <div class="inputbox">
+                                <textarea required name="message"></textarea>
+                                <span>Saisissez Votre message</span>
+                            </div>
+                            <div class="inputbox">
+                                <input type="submit" name="" required value="Postuler">
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--End Main Content-->
+        </div>
+
+    </section>
+
+    <!-- End Contact -->
+    <%- include("./partials/footer") %>
+        <script src="/js/toggleMenu.js"></script>
+        <script src="/js/dropDown.js"></script>
+
+        </body>
+
+        </html>
